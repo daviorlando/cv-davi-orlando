@@ -651,11 +651,11 @@
         }
 
         .main-content {
-            margin-left: var(--sidebar-collapsed);
+            margin-left: 0;
         }
 
         .main-content.expanded {
-            margin-left: var(--sidebar-width);
+            margin-left: 0;
         }
 
         .about-section {
