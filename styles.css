@@ -640,7 +640,7 @@
     /* Responsivo */
     @media (max-width: 768px) {
         .sidebar {
-            width: var(--sidebar-collapsed);
+            width: -var(--sidebar-collapsed);
             left: -var(--sidebar-collapsed);
             transition: left 0.3s ease, width 0.3s ease;
         }
@@ -651,11 +651,11 @@
         }
 
         .main-content {
-            margin-left: 0;
+            margin-left: var(--sidebar-collapsed);
         }
 
         .main-content.expanded {
-            margin-left: 0;
+            margin-left: var(--sidebar-width);
         }
 
         .about-section {
